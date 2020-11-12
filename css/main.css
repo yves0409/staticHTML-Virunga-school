@@ -1,0 +1,686 @@
+* {
+    box-sizing: contain;
+}
+ .herowrapper {                           /* hero wrapper */
+    margin: 0 auto;     
+    width: 98%;
+    background-image: url("../images/Virunga_sunset-panorama.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.logo {
+    margin: 10px;
+    flex: 0.5;
+}
+.logo img {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.main_menu {                          /*  hero navigation */
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 350px;                        
+}
+.menu-items {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.menu-items a {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu-items a:hover {
+    font-size: 25px;
+    color: black;
+    background-color: grey;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.top_description {                     /* hero social media */
+    margin: 10px;
+    padding: 10px;
+    color: grey;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+.top_description p:hover {
+    font-size: 1.2em;
+}
+.align_right {
+    margin: 10px;
+    flex: 1.5;
+    display: flex;
+    color: white;
+}
+.socialsharing1 {
+    padding: 10px;
+}
+.socialsharing1 a {
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.socialsharing1 a:hover {
+    color: grey;
+    font-weight: bold;
+}
+.switchlanguage {
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+.en:hover,
+.nl:hover {
+    color:grey;
+}
+.rightside {
+    padding: 10px;
+    color:orange;
+    font-size: 1.2em;
+}
+.rightside:hover {
+    font-size: 1.3em;
+}
+.icoon {                            /* mobilenav */
+    width: 35px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: green;
+    margin: 6px 0;
+    position: relative;}
+
+#hamburger {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 8px;
+}
+.mobilenav {
+    position: relative;
+    right: 50px;
+    top: 15px;
+}
+.mobilenav #myLinks {
+    display: none;
+    margin-left: 70px;
+    margin-right: 15px;
+    position: absolute;
+    top:-350px;
+    left:125px;
+}
+.mobilenav a {
+    color: black;
+    background-color: lightgrey;
+    opacity: 0.5;
+    border-radius: 8px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    text-align: right;
+}
+a.line:hover {
+    color: black;
+    border-bottom: 4px solid black;
+}
+.backgroundbar {                      /* sliding bar */
+    position: sticky;
+    top: -100px; 
+    height: 50px;
+    background-color: black;
+    z-index: -1;
+    width: 98%;
+    margin: 0 auto;
+}
+.example {                           /* animation sliding bar */
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+}
+
+.example h3 {
+    font-size: 2em;
+    color: white;
+    width: 270%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+
+     /* Starting position */
+    /*-moz-transform:translateX(100%);*/
+    /*-webkit-transform:translateX(100%);    */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    /*-moz-animation: example1 15s linear infinite;*/
+    /*-webkit-animation: example1 15s linear infinite;*/
+    animation: example 25s linear infinite;
+}
+
+/* Move it (define the animation) */
+/*@-moz-keyframes example1 {
+                                 0%   { -moz-transform: translateX(100%); }
+                                 100% { -moz-transform: translateX(-100%); }
+                                 }
+                             @-webkit-keyframes example1 {
+                                 0%   { -webkit-transform: translateX(100%); }
+                                 100% { -webkit-transform: translateX(-100%); }
+                                  }*/
+@keyframes example {
+    0% {
+        /*-moz-transform: translateX(100%); /* Firefox bug fix */
+        /*-webkit-transform: translateX(100%); /* Firefox bug fix */
+        transform: translateX(100%);
+    }
+
+    100% {
+        /*-moz-transform: translateX(-100%); /* Firefox bug fix */
+        /*-webkit-transform: translateX(-100%); /* Firefox bug fix */
+        transform: translateX(-100%);
+    }
+}
+
+.gridcontainer {                      /* grid area */
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+}
+.a {                                 /* virunga keeper main pic */
+    grid-column: span 8;
+    grid-row: span 6;
+    background-image: url("../images/virunga-keeper-gorilla\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height:600px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.a h3 {
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(133, 148, 128);
+    opacity: 0.8;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid white;
+}
+.b {                                     /* b en c infosquare */
+    grid-column: span 2;
+    background-image: linear-gradient(rgb(100, 119, 100), rgb(183, 218, 167));
+    border: 15px solid lightsteelblue;
+    border-image: repeating-linear-gradient(30deg, #f7faf5, #010107 30px) 15;
+    grid-row: span 3;
+    background-color: green;
+}
+.c {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-image: linear-gradient(rgb(100, 119, 100), rgb(183, 218, 167));
+    border: 15px solid lightsteelblue;
+    border-image: repeating-linear-gradient(30deg, #f7faf5, #010107 30px) 15;
+    background-color: green;
+}
+.b,
+.c {
+    font-size: 1.5em;
+    text-align: start;
+    padding: 13px;
+}
+.d {                                 /* gorilla population */
+    grid-column: span 2;
+    height: 250px;
+}
+.d h3 {
+    padding: 10px;
+}
+.e {                              /* progress of the population */
+    grid-column: span 8;
+}
+.row {
+    padding: 10px;
+    margin: 10px;
+}
+.text {
+    display: flex;
+    flex-direction: row;
+}
+.left,
+.right {
+    margin: 10px;
+    padding: 10px;
+}
+.data {
+    display: flex;
+    flex-direction: row;
+}
+.entry {
+    display: flex;
+    flex-direction: row;
+}
+.entry p {
+    padding: 10px;
+    ;
+}
+.entry .text {
+    font-weight: bold;
+}
+.value {
+    font-size: 2em;
+    margin-top: 6px;
+}
+.viewdetails {
+    position: absolute;
+    bottom: 10px;
+}
+
+.speciescards {                   /*Speciescards*/
+    padding-bottom: 15px;
+    ;
+}
+.f,
+.g,
+.h,
+.i,
+.j {
+    grid-column: span 2;
+    background-image: linear-gradient(rgb(100, 119, 100), rgb(183, 218, 167));
+    text-align: center;
+    padding: 10px;
+    border-image: repeating-linear-gradient(30deg, #f7faf5, #010107 30px) 15;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    }
+.k {                             /*Gorilla selfie*/
+    grid-column: span 4;
+    grid-row: span 6;
+    height: 500px;
+    background-image: url("../images/selfie.jpeg");
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.k p {
+     position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: rgb(108, 131, 107);
+    opacity: 0.8;
+}
+.k:hover,
+.l:hover {
+    background-size: 102%;
+}
+.l {                            /* volunteer playing with gorilla */
+    grid-column: span 3;
+    grid-row: span 4;
+    background-image: url("../images/Banner-Image.jpg");
+    border-top: 5px solid #000;
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10px;
+    height: 400px;
+}
+.m {                             /*Andre Quote  */
+    grid-column: span 3;
+    grid-row: span 4;
+    }
+.m h2 {
+    border-top: 5px solid #000;
+    padding: 20px 30px;
+    margin: 10px;
+}
+.n {                             /* Andre credits */
+    grid-column: span 3;
+    grid-row: span 2;
+    display: flex;
+    align-items: flex-end;
+    background-color: lightgrey;
+    opacity: 0.8;
+}
+.o {
+    grid-column: span 3;
+    grid-row: span 2;
+    display: flex;
+    align-items: flex-end;
+    background-color: lightgrey;
+    opacity: 0.8;
+}
+.n p,
+.o p {
+    padding: 10px;
+    margin-top: 30px;
+    border-bottom: 5px solid black;
+}
+
+.andre {
+    font-weight: bold;
+}
+                                   /* GALLERY */
+.p {
+    grid-column: span 10;
+    grid-row: span auto;
+    min-height: 400px;
+}
+.locationGallery {
+    width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.next {
+    margin-left: 25px;
+    padding: 3px 10px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: none;
+    position: absolute;
+    right: 0px;
+}
+.prev {
+    margin-right: 25px;
+    padding: 3px 10px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+.imageContainer {
+    display: flex;
+    float: left;
+    padding: 10px;
+}
+.clear {
+    clear: both;
+}
+.imageDisplay {
+    margin: 0 auto;
+    position: relative;
+}
+.imageDisplay img {
+    width: 450px;
+}
+.space {
+    height: 30px;
+    width: 100%;
+    clear: both;
+}
+.imageContainer img {
+    width: 130px;
+    height: 65px;
+}
+.buttons {
+    height: 30px;
+    margin-top: 15px;
+}
+.extrabtn {
+    grid-column: span 10;
+    grid-row: span auto;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(rgb(100, 119, 100), rgb(183, 218, 167));
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #666;
+    text-align: center;
+    width: 40vw;
+}
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 9px white;
+    transform: translateY(4px);
+}
+.q {                                /* park protection */
+    grid-column: span 10;
+    grid-row: span auto;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    }
+.q>div:first-child {
+    grid-column: span 2;
+    grid-row: span 6;
+    text-align: center;
+}
+.q>div {
+    padding: 10px;
+    margin: 10px;grid-column: span 4;
+    grid-row: span 3;
+}
+.virunga_pic {
+    background-image: url("../images/ver11.jpg");
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 5px solid black;
+    background-position: center;
+    height: 200px;
+    width: auto;
+}
+.virunga_text1 {
+    border-top: 5px solid black;
+    padding-top: 10px;
+    background-color: lightgrey;
+    opacity: 0.8;
+}
+.virunga_text2 {
+    border-bottom: 5px solid black;
+    background-color: lightgrey;
+    opacity: 0.8;
+}
+.virunga_protection {
+    border-top: 5px solid black;
+    background-color: lightgrey;
+    opacity: 0.8;
+}
+.r,                                        /* data park rangers */
+.s,
+.t,
+.u,
+.v {
+    grid-column: span 5;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display:none;
+}
+.name {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+.count {
+    font-size: 31px;
+    background-color: lightgrey;
+    opacity: 0.5;
+}
+.description {
+    padding-bottom: 25px;
+    border-bottom: 2px solid grey;
+}
+.help {                                  /* Join the effort */
+    grid-column: span 10;
+    display: flex;
+    flex-direction: column;
+}
+.help h3 {
+    margin: 10px;
+    padding: 10px;
+}
+.help .txt {
+    font-size: 1.5rem;
+    color: #999;
+    margin: 10px;
+    padding: 10px;
+}
+.donate {                                /* donation box */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.amount {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.amount:hover {
+    background-color: grey;
+    color: black;
+}
+.amount .input {
+    margin-top: 10;
+}
+.submitButton {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.footercontainer {                  /* footersection */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    position: relative;
+    background-color: #00334d;
+    color: white;
+    padding: 15px;
+}
+.footercontainer a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.signupcontainer {
+    margin: 5px;
+    grid-column: span 10;
+}
+.infocontainer {
+    margin: 5px;
+    grid-column: span 10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.infocontainer>div {
+    border-top: 1px solid white;
+}
+.firstsection {
+    margin: 5px;
+    grid-column: span 6;
+    padding-top: 15px;
+}
+.secondsection {
+    margin: 5px;
+    grid-column: span 2;
+}
+.listview {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+}
+.socialsharing {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+}
+.thirdsection {
+    margin: 5px;
+    grid-column: span 2;
+}
+
+.endcontainer {
+    margin: 5px;
+    grid-column: span 10;
+    border-top: 1px solid white;
+}
+.headline {
+    color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.bottomitems {
+    margin-top: 96px;
+}
+.bottomitems a {
+    color: orange;
+    font-size: 20px;
+    padding: 0 10px 10px 10px;
+} 
+.contactsubheader {
+    color: grey;
+}
+.contactemail {
+    font-size: 1.5rem;
+}
+.flag img {
+    width: auto;
+    height: 100px;
+    margin: 15px;
+}
+.endcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.copyright {
+    color: grey;
+    padding: 10px;
+}
+.termsofprivacy {
+    color: grey;
+    padding: 10px;
+}
+.credits {
+    padding: 10px;
+}
+

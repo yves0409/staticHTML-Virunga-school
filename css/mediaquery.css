@@ -1,0 +1,160 @@
+
+                                             
+@media only screen and (max-width: 800px) {    /* navigation */
+    .menu-items a {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #hamburger {
+        display: none;
+    }
+    .mobilenav #myLinks a {
+        display: none;
+    }
+}
+
+/* @media only screen and (min-width: 800px) {
+    .mobilenav #myLinks a {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 800px) {
+    .main_menu {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        min-height: 100px;
+    }
+}
+                                             
+@media only screen and (max-width: 805px) {     /* virunga keeper main pic */
+    .a h3 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .a {
+        grid-column: span 10;
+        height: 450px;
+    }
+    .b {                                       /* infosquares */         
+        grid-column: span 5;
+    }
+    .c {
+        grid-column: span 5;
+    }
+}
+                                             
+@media only screen and (max-width: 900px) {    /* mountain gorilla population */
+    .d {
+        grid-column: span 10;
+        text-align: center;
+        height: 20px;
+    }
+    .e {                                     /* mountain gorilla info */
+        grid-column: span 10;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {   /* species cards */
+   .f {
+        grid-column:span 5;
+    }
+    .g {
+        grid-column:span 5;
+    }
+    .h {
+        grid-column:span 5;
+    }
+    .i {
+        grid-column:span 5;
+    }
+
+    .j {
+        grid-column:span 10;  
+    }
+}
+                                                  
+@media only screen and (max-width: 900px) {      /* Selfie monkey */
+    .k {
+        grid-column: span 10;
+    }
+}
+                                                 
+@media only screen and (max-width: 916px) {      /* volunteer playing */
+    .l {
+        grid-column: span 10;
+    }
+    .m {                                         /* andre quotes */
+        grid-column: span 10;
+        height: 100%;
+    }
+    .n {
+        grid-column: span 5;
+    }
+    .o {
+        grid-column: span 5;
+    }
+    .q .virunga_pic {
+        margin-top: 200px;
+    }
+}
+                                                
+ @media only screen and (max-width: 900px) {        /*park protection*/
+    .q>div:first-child{
+        grid-column: span 10; 
+}
+    .q>div:nth-child(2){
+    grid-column: span 5; 
+}
+    .q>div:nth-child(3){
+    grid-column: span 5; 
+}
+    .q>div:nth-child(4){
+    grid-column: span 10;
+    background-size:100%;
+    background-size: cover;
+    height: 400px
+    
+    
+}
+    .q>div:nth-child(5){
+    grid-column: span 10; 
+    }
+}                                             
+@media only screen and (max-width: 600px) {      /* footer */
+    .donate {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .top_description {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 916px) {
+    .firstsection {
+        grid-column: span 10;
+    }
+    .secondsection {
+        grid-column: span 5;
+    }
+    .thirdsection {
+        grid-column: span 5;
+    }
+    .endcontainer {
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }}
